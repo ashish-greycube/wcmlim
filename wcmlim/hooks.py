@@ -95,7 +95,7 @@ app_license = "mit"
 # ------------------
 # To set up dependencies/integrations with other apps
 # Name of the app being installed is passed as an argument
-
+after_migrate = "wcmlim.migrate.after_migrate"
 # before_app_install = "wcmlim.utils.before_app_install"
 # after_app_install = "wcmlim.utils.after_app_install"
 
@@ -137,13 +137,11 @@ app_license = "mit"
 # ---------------
 # Hook on document methods and events
 
-# doc_events = {
-# 	"*": {
-# 		"on_update": "method",
-# 		"on_cancel": "method",
-# 		"on_trash": "method"
-# 	}
-# }
+doc_events = {
+	"Sales Order": {
+		"before_insert": "wcmlim.api.update_so_warehouse_based_on_loction_id",
+	}
+}
 
 # Scheduled Tasks
 # ---------------

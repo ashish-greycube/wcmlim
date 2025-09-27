@@ -1,0 +1,50 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2025-09-27 07:50:18.306888",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "fetch_location_details",
+  "location_details"
+ ],
+ "fields": [
+  {
+   "fieldname": "location_details",
+   "fieldtype": "Table",
+   "label": "Location Details",
+   "options": "Wcmlim Location Detail"
+  },
+  {
+   "fieldname": "fetch_location_details",
+   "fieldtype": "Button",
+   "label": "Fetch Location Details",
+   "options": "fetch_location_details"
+  }
+ ],
+ "grid_page_length": 50,
+ "index_web_pages_for_search": 1,
+ "issingle": 1,
+ "links": [],
+ "modified": "2025-09-27 07:57:44.244524",
+ "modified_by": "Administrator",
+ "module": "Wcmlim",
+ "name": "WCMLIM Settings",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "print": 1,
+   "read": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "row_format": "Dynamic",
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}
