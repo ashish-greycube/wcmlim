@@ -1,0 +1,49 @@
+{
+ "charts": [],
+ "content": "[{\"id\":\"kdrIpVQQdm\",\"type\":\"header\",\"data\":{\"text\":\"<span class=\\\"h4\\\">Woocommerce Multilocations</span>\",\"col\":12}},{\"id\":\"5Oe7NAS-r_\",\"type\":\"card\",\"data\":{\"card_name\":\"Multilocations\",\"col\":4}}]",
+ "creation": "2025-09-27 14:00:45.163929",
+ "custom_blocks": [],
+ "docstatus": 0,
+ "doctype": "Workspace",
+ "for_user": "",
+ "hide_custom": 0,
+ "icon": "table_2",
+ "idx": 0,
+ "indicator_color": "green",
+ "is_hidden": 0,
+ "label": "Woocommerce Multilocations",
+ "links": [
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Multilocations",
+   "link_count": 1,
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Card Break"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "WCMLIM Settings",
+   "link_count": 0,
+   "link_to": "WCMLIM Settings",
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Link"
+  }
+ ],
+ "modified": "2025-09-27 14:02:28.301217",
+ "modified_by": "Administrator",
+ "module": "Wcmlim",
+ "name": "Woocommerce Multilocations",
+ "number_cards": [],
+ "owner": "Administrator",
+ "parent_page": "",
+ "public": 1,
+ "quick_lists": [],
+ "roles": [],
+ "sequence_id": 42.0,
+ "shortcuts": [],
+ "title": "Woocommerce Multilocations"
+}

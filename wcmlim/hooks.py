@@ -140,7 +140,10 @@ after_migrate = "wcmlim.migrate.after_migrate"
 doc_events = {
 	"Sales Order": {
 		"before_insert": "wcmlim.api.update_so_warehouse_based_on_loction_id",
-	}
+	},
+	"Address": {
+		"before_validate": "wcmlim.api.add_saudi_arabia_postal_code",
+	}    
 }
 
 # Scheduled Tasks
