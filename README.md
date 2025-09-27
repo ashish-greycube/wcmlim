@@ -2,6 +2,41 @@
 
 Customization for Woocommerce Multilocations Invnetory Management
 
+WooCommerce Admin Task
+======================
+[1] purchase and install 
+https://codecanyon.net/item/woocommerce-multi-locations-inventory-management/28949586
+
+[2] install  to enable legacy REST API
+https://wordpress.org/plugins/woocommerce-legacy-rest-api/
+success_phot
+
+[3] update key 
+https://test.daralzbrj.com.sa/wp-admin/edit-tags.php?page=multi-location-inventory-management
+success_phot
+
+[4] Enable Rest API
+https://test.daralzbrj.com.sa/wp-admin/admin.php?page=wc-settings&tab=advanced&section=keys
+https://test.daralzbrj.com.sa/wp-admin/admin.php?page=wc-settings&tab=advanced&section=keys&edit-key=1
+success_phot
+
+
+Task in ERPNext
+==============
+
+[1]Enable Stock Level Synchronisation and put all warehouse
+https://testdarco15.etqansoft.com/app/woocommerce-server/test.daralzbrj.com.sa
+success_phot
+
+[2] Update SO : Fields Mapping
+https://testdarco15.etqansoft.com/app/woocommerce-server/test.daralzbrj.com.sa
+"custom_wcmlim_location_id | wcmlim_location_id" $.meta_data[?(@.key=='_selectedLocTermId')].value
+success_phot
+
+[3] fetch location mapping
+https://testdarco15.etqansoft.com/app/wcmlim-settings
+success_phot
+
 ### Installation
 
 You can install this app using the [bench](https://github.com/frappe/bench) CLI:

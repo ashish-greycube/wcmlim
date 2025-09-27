@@ -2,6 +2,7 @@
  "actions": [],
  "allow_rename": 1,
  "creation": "2025-09-27 07:50:18.306888",
+ "description": "https://documenter.getpostman.com/view/38446422/2sAXqs8NcX#ff306a62-1268-45fe-ba8d-b67ca673b5f3",
  "doctype": "DocType",
  "engine": "InnoDB",
  "field_order": [
@@ -10,6 +11,7 @@
  ],
  "fields": [
   {
+   "description": "https://documenter.getpostman.com/view/38446422/2sAXqs8NcX#ff306a62-1268-45fe-ba8d-b67ca673b5f3",
    "fieldname": "location_details",
    "fieldtype": "Table",
    "label": "Location Details",
@@ -26,7 +28,7 @@
  "index_web_pages_for_search": 1,
  "issingle": 1,
  "links": [],
- "modified": "2025-09-27 07:57:44.244524",
+ "modified": "2025-09-27 14:37:26.169757",
  "modified_by": "Administrator",
  "module": "Wcmlim",
  "name": "WCMLIM Settings",

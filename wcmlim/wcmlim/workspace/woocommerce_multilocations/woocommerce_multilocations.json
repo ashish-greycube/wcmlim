@@ -1,6 +1,6 @@
 {
  "charts": [],
- "content": "[{\"id\":\"kdrIpVQQdm\",\"type\":\"header\",\"data\":{\"text\":\"<span class=\\\"h4\\\">Woocommerce Multilocations</span>\",\"col\":12}},{\"id\":\"5Oe7NAS-r_\",\"type\":\"card\",\"data\":{\"card_name\":\"Multilocations\",\"col\":4}}]",
+ "content": "[{\"id\":\"kdrIpVQQdm\",\"type\":\"header\",\"data\":{\"text\":\"<span class=\\\"h4\\\">Woocommerce Multilocations</span>\",\"col\":12}},{\"id\":\"AAsut83S-K\",\"type\":\"card\",\"data\":{\"card_name\":\"Woocommerce Synch\",\"col\":4}},{\"id\":\"ISW6Zn3rbu\",\"type\":\"card\",\"data\":{\"card_name\":\"Woocommerce Data\",\"col\":4}},{\"id\":\"5Oe7NAS-r_\",\"type\":\"card\",\"data\":{\"card_name\":\"Multilocations\",\"col\":4}}]",
  "creation": "2025-09-27 14:00:45.163929",
  "custom_blocks": [],
  "docstatus": 0,
@@ -31,9 +31,107 @@
    "link_type": "DocType",
    "onboard": 0,
    "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Woocommerce Synch",
+   "link_count": 4,
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Card Break"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "WooCommerce Integration Settings",
+   "link_count": 0,
+   "link_to": "WooCommerce Integration Settings",
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "WooCommerce Request Log",
+   "link_count": 0,
+   "link_to": "WooCommerce Request Log",
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "WooCommerce Server",
+   "link_count": 0,
+   "link_to": "WooCommerce Server",
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Error Log",
+   "link_count": 0,
+   "link_to": "Error Log",
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Woocommerce Data",
+   "link_count": 4,
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Card Break"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "WooCommerce Order",
+   "link_count": 0,
+   "link_to": "WooCommerce Order",
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "WooCommerce Product",
+   "link_count": 0,
+   "link_to": "WooCommerce Product",
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Sales Order",
+   "link_count": 0,
+   "link_to": "Sales Order",
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Item",
+   "link_count": 0,
+   "link_to": "Item",
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Link"
   }
  ],
- "modified": "2025-09-27 14:02:28.301217",
+ "modified": "2025-09-27 14:28:11.409821",
  "modified_by": "Administrator",
  "module": "Wcmlim",
  "name": "Woocommerce Multilocations",
