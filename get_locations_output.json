@@ -1,0 +1,110 @@
+[
+    {
+        "term_id": 74,
+        "name": "جده الحرازات - DA",
+        "slug": "03",
+        "term_group": 0,
+        "term_taxonomy_id": 74,
+        "taxonomy": "locations",
+        "description": "",
+        "parent": 0,
+        "count": 350,
+        "filter": "raw"
+    },
+    {
+        "term_id": 79,
+        "name": "مستودع الأحساء - DA",
+        "slug": "08",
+        "term_group": 0,
+        "term_taxonomy_id": 79,
+        "taxonomy": "locations",
+        "description": "",
+        "parent": 0,
+        "count": 349,
+        "filter": "raw"
+    },
+    {
+        "term_id": 80,
+        "name": "مستودع الدمام - DA",
+        "slug": "09",
+        "term_group": 0,
+        "term_taxonomy_id": 80,
+        "taxonomy": "locations",
+        "description": "",
+        "parent": 0,
+        "count": 349,
+        "filter": "raw"
+    },
+    {
+        "term_id": 77,
+        "name": "مستودع الرياض السلي - DA",
+        "slug": "06",
+        "term_group": 0,
+        "term_taxonomy_id": 77,
+        "taxonomy": "locations",
+        "description": "",
+        "parent": 0,
+        "count": 349,
+        "filter": "raw"
+    },
+    {
+        "term_id": 76,
+        "name": "مستودع الرياض الشفا - DA",
+        "slug": "05",
+        "term_group": 0,
+        "term_taxonomy_id": 76,
+        "taxonomy": "locations",
+        "description": "",
+        "parent": 0,
+        "count": 349,
+        "filter": "raw"
+    },
+    {
+        "term_id": 73,
+        "name": "مستودع الطائف - DA",
+        "slug": "02",
+        "term_group": 0,
+        "term_taxonomy_id": 73,
+        "taxonomy": "locations",
+        "description": "",
+        "parent": 0,
+        "count": 349,
+        "filter": "raw"
+    },
+    {
+        "term_id": 75,
+        "name": "مستودع جازان - DA",
+        "slug": "04",
+        "term_group": 0,
+        "term_taxonomy_id": 75,
+        "taxonomy": "locations",
+        "description": "",
+        "parent": 0,
+        "count": 349,
+        "filter": "raw"
+    },
+    {
+        "term_id": 72,
+        "name": "مستودع جدة - DA",
+        "slug": "01",
+        "term_group": 0,
+        "term_taxonomy_id": 72,
+        "taxonomy": "locations",
+        "description": "",
+        "parent": 0,
+        "count": 349,
+        "filter": "raw"
+    },
+    {
+        "term_id": 78,
+        "name": "مستودع خميس مشيط - DA",
+        "slug": "07",
+        "term_group": 0,
+        "term_taxonomy_id": 78,
+        "taxonomy": "locations",
+        "description": "",
+        "parent": 0,
+        "count": 349,
+        "filter": "raw"
+    }
+]
