@@ -22,6 +22,10 @@ https://test.daralzbrj.com.sa/wp-admin/admin.php?page=wc-settings&tab=advanced&s
 <img width="1453" height="641" alt="image" src="https://github.com/user-attachments/assets/79119c96-8944-45bd-9f26-abbe96292046" />
 
 
+[5] Navigate to Settings -> Permalinks and check if the permalink is set to custom structure with endpoint as posts as mentioned in the attached screenshot. For Rest API to work this is needed
+<img width="1638" height="968" alt="image" src="https://github.com/user-attachments/assets/afeee5e7-32d1-4965-ac7d-260c5f251349" />
+
+
 
 Task in ERPNext
 ==============
