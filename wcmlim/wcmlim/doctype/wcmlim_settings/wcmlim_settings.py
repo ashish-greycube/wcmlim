@@ -6,6 +6,8 @@ from frappe.model.document import Document
 import requests
 import base64
 
+# 1. You need to autheticate each MultiLoca API request in exactly same way as we autheticate woocommerce API with the created client key & secret. The authentication method will be "Basic Auth" as shown in the attached screenshot.
+# 2. To get a detailed understadnding of all our supported API's Please review our postman collection - https://documenter.getpostman.com/view/38446422/2sAXqs8NcX
 class WCMLIMSettings(Document):
 	@frappe.whitelist()
 	def fetch_location_details(self, throw_if_missing=False):
