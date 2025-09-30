@@ -7,7 +7,7 @@ WooCommerce Admin Task
 [1] purchase and install 
 https://codecanyon.net/item/woocommerce-multi-locations-inventory-management/28949586
 
-[2] install  to enable legacy REST API
+[2] install  to enable legacy REST API <-- not required
 https://wordpress.org/plugins/woocommerce-legacy-rest-api/
 <img width="1305" height="581" alt="image" src="https://github.com/user-attachments/assets/0738c6cd-478d-4738-9c0d-aaee45810c84" />
 
