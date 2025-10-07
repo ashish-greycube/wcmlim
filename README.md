@@ -45,6 +45,12 @@ https://testdarco15.etqansoft.com/app/woocommerce-server/test.daralzbrj.com.sa
 https://testdarco15.etqansoft.com/app/wcmlim-settings
 <img width="1446" height="673" alt="image" src="https://github.com/user-attachments/assets/81c98334-d1c6-4a3f-bf1a-26728397a600" />
 
+[4] fetch payment methods
+https://testdarco15.etqansoft.com/app/wc-payment-settings
+<img width="1720" height="836" alt="image" src="https://github.com/user-attachments/assets/75b9459c-c769-4e7a-9ec9-ba09f549df05" />
+Ensure the WC Title matches with Payment method on customer checkout page
+<img width="1267" height="1108" alt="image" src="https://github.com/user-attachments/assets/8c57f233-ccdc-45b6-8d6c-fc50bc5047ec" />
+
 
 ### Installation
 
