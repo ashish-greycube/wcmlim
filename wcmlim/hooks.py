@@ -139,8 +139,11 @@ after_migrate = "wcmlim.migrate.after_migrate"
 
 doc_events = {
 	"Sales Order": {
-		"before_insert": "wcmlim.api.update_so_warehouse_based_on_loction_id",
+		"before_insert": ["wcmlim.api.update_so_warehouse_based_on_loction_id","wcmlim.api.update_so_mode_of_payment_based_on_payment_id"],
 	},
+	"Sales Invoice": {
+		"before_insert": ["wcmlim.api.update_si_mode_of_payment_based_on_so_wc"],
+	},    
 	"Address": {
 		"before_validate": "wcmlim.api.add_saudi_arabia_postal_code",
 	}    

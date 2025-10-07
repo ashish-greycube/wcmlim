@@ -1,6 +1,6 @@
 {
  "charts": [],
- "content": "[{\"id\":\"kdrIpVQQdm\",\"type\":\"header\",\"data\":{\"text\":\"<span class=\\\"h4\\\">Woocommerce Multilocations</span>\",\"col\":12}},{\"id\":\"AAsut83S-K\",\"type\":\"card\",\"data\":{\"card_name\":\"Woocommerce Synch\",\"col\":4}},{\"id\":\"ISW6Zn3rbu\",\"type\":\"card\",\"data\":{\"card_name\":\"Woocommerce Data\",\"col\":4}},{\"id\":\"5Oe7NAS-r_\",\"type\":\"card\",\"data\":{\"card_name\":\"Multilocations\",\"col\":4}}]",
+ "content": "[{\"id\":\"kdrIpVQQdm\",\"type\":\"header\",\"data\":{\"text\":\"<span class=\\\"h4\\\">Woocommerce Multilocations</span>\",\"col\":12}},{\"id\":\"AAsut83S-K\",\"type\":\"card\",\"data\":{\"card_name\":\"Woocommerce Synch\",\"col\":4}},{\"id\":\"ISW6Zn3rbu\",\"type\":\"card\",\"data\":{\"card_name\":\"Woocommerce Data\",\"col\":4}},{\"id\":\"5Oe7NAS-r_\",\"type\":\"card\",\"data\":{\"card_name\":\"Multilocations\",\"col\":4}},{\"id\":\"OZZXdANPjh\",\"type\":\"card\",\"data\":{\"card_name\":\"Mode Of Payment\",\"col\":4}}]",
  "creation": "2025-09-27 14:00:45.163929",
  "custom_blocks": [],
  "docstatus": 0,
@@ -129,9 +129,28 @@
    "link_type": "DocType",
    "onboard": 0,
    "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Mode Of Payment",
+   "link_count": 1,
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Card Break"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "WC Payment Settings",
+   "link_count": 0,
+   "link_to": "WC Payment Settings",
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Link"
   }
  ],
- "modified": "2025-09-27 14:28:11.409821",
+ "modified": "2025-10-07 14:19:33.490705",
  "modified_by": "Administrator",
  "module": "Wcmlim",
  "name": "Woocommerce Multilocations",

@@ -17,7 +17,21 @@ def after_migrate():
                 read_only=1,
 
             ),
-        ]        
+        ],
+        "Sales Order": [
+            dict(
+                fieldname="custom_wc_mode_of_payment",
+                label="Mode of Payment",
+                fieldtype="Link",
+                insert_after="woocommerce_payment_method",
+                options="Mode of Payment",
+                translatable=0,
+                is_system_generated=0,
+                is_custom_field=1,
+                read_only=1,
+
+            ),
+        ]                 
     }
     print("Creating custom fields for app wcmlim")
     for dt, fields in custom_fields.items():
