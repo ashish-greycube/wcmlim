@@ -16,7 +16,7 @@
    "options": "fetch_payment_details"
   },
   {
-   "description": "https://woocommerce.github.io/woocommerce-rest-api-docs/#list-all-payment-gateways",
+   "description": "https://woocommerce.github.io/woocommerce-rest-api-docs/#list-all-payment-gateways\n<br>Ensure the WC Title matches with Payment method on  customer checkout page",
    "fieldname": "wc_payment_details",
    "fieldtype": "Table",
    "label": "WC Payment Details",
@@ -27,7 +27,7 @@
  "index_web_pages_for_search": 1,
  "issingle": 1,
  "links": [],
- "modified": "2025-10-07 12:17:06.119452",
+ "modified": "2025-10-07 17:03:42.368955",
  "modified_by": "Administrator",
  "module": "Wcmlim",
  "name": "WC Payment Settings",

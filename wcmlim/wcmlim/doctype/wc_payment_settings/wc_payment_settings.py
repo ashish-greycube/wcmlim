@@ -13,7 +13,6 @@ verify_ssl = not frappe._dev_server
 class WCPaymentSettings(Document):
 	@frappe.whitelist()
 	def fetch_payment_details(self, throw_if_missing=False):
-		print('='*10)
 		wc_servers = frappe.get_all("WooCommerce Server")
 		wc_servers = [frappe.get_doc("WooCommerce Server", server.name) for server in wc_servers]
 		for server in wc_servers:
@@ -30,7 +29,6 @@ class WCPaymentSettings(Document):
 					endpoint = f"payment_gateways"
 					response=wc_api.get("payment_gateways").json()
 					for row in response:
-						print(row,"==",row.get("id"),row.get("method_title"))
 						if row.get("id") and row.get("method_title"):
 							if not frappe.db.exists("WC Payment Detail", {"wc_id": row.get("id")}):
 								new_data_row = self.append('wc_payment_details', {})

@@ -20,10 +20,8 @@ def add_saudi_arabia_postal_code(doc, method):
 
 def update_so_mode_of_payment_based_on_payment_id(doc, method):
     woocommerce_payment_method=doc.get("woocommerce_payment_method")
-    print('woocommerce_payment_method',woocommerce_payment_method)
     if woocommerce_payment_method!='':
             mode_of_payment=frappe.db.get_value('WC Payment Detail', {'wc_title':_(woocommerce_payment_method)}, ['mode_of_payment'])
-            print('mode_of_payment',mode_of_payment)
             if mode_of_payment:
                  doc.custom_wc_mode_of_payment=mode_of_payment
 
@@ -34,6 +32,7 @@ def update_si_mode_of_payment_based_on_so_wc(doc, method):
             if so_wc!='':
                  wc_details=frappe.db.get_value('Sales Order', {'name': so_wc}, ['custom_wc_mode_of_payment','grand_total'], as_dict=1)
                  if wc_details:
+                    doc.payments=[]
                     new_data_row = doc.append('payments', {})
                     new_data_row.mode_of_payment =  wc_details.get("custom_wc_mode_of_payment")
                     new_data_row.amount =  wc_details.get("grand_total")
