@@ -148,7 +148,7 @@ doc_events = {
 		"before_validate": "wcmlim.api.add_saudi_arabia_postal_code",
 	},
 	"Customer": {
-		"before_insert": ["wcmlim.api.update_customer_based_on_mobile_no"],
+		"before_save": ["wcmlim.api.update_customer_based_on_mobile_no"],
 	}	    
 }
 
