@@ -16,7 +16,7 @@ class WCMLIMSettings(Document):
 		if len(wcs_list)>0:
 			for wc_server_row in wcs_list:
 				wc_server=frappe.get_doc("WooCommerce Server", wc_server_row.name)
-				url = wc_server.woocommerce_server_url+"wp-json/wc/v3/locations"
+				url = wc_server.woocommerce_server_url+"/wp-json/wc/v3/locations"
 				client_id = wc_server.api_consumer_key
 				client_secret = wc_server.api_consumer_secret
 				# encode client_id:client_secret
