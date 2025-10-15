@@ -26,7 +26,7 @@ def update_so_mode_of_payment_based_on_payment_id(doc, method):
                  doc.custom_wc_mode_of_payment=mode_of_payment
 
 def update_customer_based_on_mobile_no(doc, method):
-    if doc.woocommerce_identifier and doc.mobile_no :
+    if doc.mobile_no and not doc.custom_customer_phone_no:
         doc.custom_customer_phone_no = doc.mobile_no
 
 def update_si_mode_of_payment_based_on_so_wc(doc, method):
