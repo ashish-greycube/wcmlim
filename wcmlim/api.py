@@ -27,13 +27,27 @@ def update_so_mode_of_payment_based_on_payment_id(doc, method):
 
 def update_customer_based_on_mobile_no(doc, method):
     if doc.doctype == "Customer":
-        if doc.mobile_no and not doc.custom_customer_phone_no:
-            doc.custom_customer_phone_no = doc.mobile_no
+        if doc.mobile_no and doc.custom_customer_phone_no == None:
+            frappe.db.set_value('Customer', doc.name, 'custom_customer_phone_no', doc.mobile_no)
+        elif not doc.mobile_no and doc.custom_customer_phone_no == None:
+            phone_detail=frappe.db.get_value('Dynamic Link', {'link_doctype': 'Customer',"link_name": doc.name}, ['parent'], as_dict=1)
+            if phone_detail and phone_detail.get("parent"):
+                 phone=frappe.db.get_value('Contact', phone_detail.get("parent"), 'phone')
+                 if phone and phone!='':
+                    doc.custom_customer_phone_no = phone
+                    frappe.db.set_value('Customer', doc.name, 'custom_customer_phone_no', phone)
+
     elif doc.doctype == "Sales Order":
         if doc.customer and doc.customer!='':
             customer_details=frappe.db.get_value('Customer', {'name': doc.customer}, ["mobile_no",'custom_customer_phone_no'], as_dict=1)
-            if customer_details and customer_details.get("mobile_no") and not customer_details.get("custom_customer_phone_no"):
+            if customer_details and customer_details.get("mobile_no") and  customer_details.get("custom_customer_phone_no")==None:
                 frappe.db.set_value('Customer', doc.customer, 'custom_customer_phone_no', customer_details.get("mobile_no"))
+            elif customer_details and customer_details.get("custom_customer_phone_no")==None and  customer_details.get("mobile_no")==None:
+                phone_detail=frappe.db.get_value('Dynamic Link', {'link_doctype': 'Customer',"link_name": doc.customer}, ['parent'], as_dict=1)
+                if phone_detail and phone_detail.get("parent"):
+                     phone=frappe.db.get_value('Contact', phone_detail.get("parent"), 'phone')
+                     if phone and phone!='':
+                        frappe.db.set_value('Customer', doc.customer, 'custom_customer_phone_no', phone)
 
 def update_si_mode_of_payment_based_on_so_wc(doc, method):
      for row in doc.get("items"):
