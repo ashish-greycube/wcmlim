@@ -51,6 +51,24 @@ https://testdarco15.etqansoft.com/app/wc-payment-settings
 Ensure the WC Title matches with Payment method on customer checkout page
 <img width="1267" height="1108" alt="image" src="https://github.com/user-attachments/assets/8c57f233-ccdc-45b6-8d6c-fc50bc5047ec" />
 
+# multi stock : steps
+
+woocommerce : item A, price 10, stock : 0(no stock entry in woocomerce) ,
+
+Track stock quantity for this product:Y and add all locations
+
+<img width="1827" height="1078" alt="image" src="https://github.com/user-attachments/assets/d8cc1540-e364-4184-b88e-75c3563a42c2" />
+
+
+In ERPNext : 
+
+item A, stock : 10 ...so put woocommerce product ID 
+
+do stock entry & sync stock
+
+<img width="1812" height="820" alt="image" src="https://github.com/user-attachments/assets/3701a5f8-a3fb-479e-b4dd-453888d68392" />
+
+
 
 ### Installation
 
