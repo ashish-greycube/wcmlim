@@ -92,3 +92,22 @@ def remove_text_in_brackets(text):
 # str4 = "الدفع (المتجر) نقدًا (كاش) عند الإستلام"
 # print(f"Original: {str4}")
 # print(f"Cleaned: {remove_text_in_brackets(str4)}\n")                 
+
+def so_item_fetch_cost_center_from_warehouse(doc, method):
+	if doc.woocommerce_id:
+		if len(doc.items) > 0:
+			for row in doc.items:
+				if row.warehouse:
+					cost_center = frappe.db.get_value("Warehouse", row.warehouse, "custom_default_cost_center")
+					if cost_center:
+						row.cost_center = cost_center
+                              
+def si_item_fetch_cost_center_and_warehouse_from_so(doc, method):
+	if len(doc.items) > 0:
+		for row in doc.items:
+			if row.sales_order:
+				woocommerce_id = frappe.db.get_value("Sales Order", row.sales_order, "woocommerce_id")
+				if woocommerce_id:
+						so_warehouse, so_cost_center = frappe.db.get_value("Sales Order Item", row.so_detail, ["warehouse", "cost_center"])
+						row.warehouse = so_warehouse or row.warehouse
+						row.cost_center = so_cost_center or row.cost_center

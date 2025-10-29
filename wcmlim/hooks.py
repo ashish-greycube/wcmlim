@@ -44,6 +44,9 @@ app_license = "mit"
 
 # include js in doctype views
 # doctype_js = {"doctype" : "public/js/doctype.js"}
+
+doctype_js = {"Sales Invoice" : "public/js/sales_invoice.js"}
+
 # doctype_list_js = {"doctype" : "public/js/doctype_list.js"}
 # doctype_tree_js = {"doctype" : "public/js/doctype_tree.js"}
 # doctype_calendar_js = {"doctype" : "public/js/doctype_calendar.js"}
@@ -140,11 +143,13 @@ after_migrate = "wcmlim.migrate.after_migrate"
 doc_events = {
 	"Sales Order": {
 		"before_insert": ["wcmlim.api.update_so_warehouse_based_on_loction_id",
-                    "wcmlim.api.update_so_mode_of_payment_based_on_payment_id"],
+                    "wcmlim.api.update_so_mode_of_payment_based_on_payment_id",
+                    "wcmlim.api.so_item_fetch_cost_center_from_warehouse"],
 		"after_insert": ["wcmlim.api.update_customer_based_on_mobile_no"],                    
 	},
 	"Sales Invoice": {
-		"before_insert": ["wcmlim.api.update_si_mode_of_payment_based_on_so_wc"],
+		"before_insert": ["wcmlim.api.update_si_mode_of_payment_based_on_so_wc",
+                    "wcmlim.api.si_item_fetch_cost_center_and_warehouse_from_so"],
 	},    
 	"Address": {
 		"before_validate": "wcmlim.api.add_saudi_arabia_postal_code",
